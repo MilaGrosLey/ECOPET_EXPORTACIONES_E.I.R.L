@@ -435,11 +435,12 @@ a { text-decoration: none; color: inherit; }
 .services-bg .section-head .eyebrow { color: #a8ffcc; }
 
 .services-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   position: relative;
   z-index: 1;
+  justify-content: center;
 }
 .service-card {
   background: rgba(255,255,255,0.10);
