@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ECOPET Exportaciones E.I.R.L. - Transformamos Residuos en Oportunidades</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ============================================================
+     NAVBAR
+============================================================ -->
+<nav class="navbar" id="navbar">
+  <a class="nav-brand" href="index.html">
+    <img src="logo.png" alt="ECOPET Logo" class="nav-logo-img">
+  </a>
+
+  <!-- ←←← AQUÍ PEGAS EL CÓDIGO DE LA FRASE →→→ -->
+  <div class="nav-frase-container">
+    <div id="navFrase" class="nav-frase">
+      Transformando recursos en progreso, con respeto por el medio ambiente.
+    </div>
+  </div>
+
+  <ul class="nav-links">
+    <li><a href="#inicio" class="active">Inicio</a></li>
+    <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#productos">Productos</a></li>
+    <li><a href="produccion.html">Producción</a></li>
+    <li><a href="#contacto" class="nav-cta">Contáctanos</a></li>
+  </ul>
+</nav>
+
+<!-- ============================================================
+     HERO
+============================================================ -->
+<section class="hero" id="inicio">
+  <div class="hero-inner">
+
+    <!-- Parte izquierda: Texto -->
+    <div class="hero-text">
+      <h1 class="hero-title">
+        Exportadores<br>de Productos<br><span>Metalúrgicos</span>
+      </h1>
+      <p class="hero-desc">
+        Recibimos, clasificamos y procesamos scrap de plomo y desperdicios metálicos mediante fundición térmica controlada, 
+  para producir tochos de plomo de alta pureza.
+      </p>
+      
+      <div class="hero-actions">
+        <a href="#produccion" class="btn btn-primary">
+          <span>⚙</span> Nuestros Procesos
+        </a>
+        <a href="#contacto" class="btn btn-outline">
+          <span>✉</span> Contactar Ahora
+        </a>
+      </div>
+    </div>
+
+    <!-- Parte derecha: Logo grande -->
+    <div class="hero-logo-side">
+      <div class="hero-logo-wrap">
+        <img src="logo.png" alt="ECOPET Logo" class="hero-logo-img">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ============================================================
+     CONÓCENOS
+============================================================ -->
+<section class="section" id="nosotros">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Conócenos</h2>
+      <p>Descubre quiénes somos y qué nos impulsa a crear un mundo más sostenible</p>
+    </div>
+
+    <!-- Historia -->
+    <div class="card-image-row reveal">
+      <div class="card-content">
+        <h3>Nuestra Historia</h3>
+        <p>
+          <strong>ECOPET EXPORTACIONES E.I.R.L. nace con la visión de convertirse en una empresa líder y de referencia en el sector metalúrgico internacional.</strong>
+        </p>
+        <p>
+Desde nuestros inicios nos enfocamos en construir un proceso integral que abarca la adquisición de materia prima, la fundición primaria por fusión térmica con altos estándares de
+ control y el despacho seguro hacia mercados globales.</p>
+
+<p>Impulsados por el compromiso con la excelencia operativa, la calidad y la confiabilidad,buscamos generar los mejores resultados tanto para nuestros clientes internacionales 
+  como para nuestros proveedores estratégicos.</p>
+        </p>
+      </div>
+      <div class="card-image-slot">
+        <img
+          src="carro2.jpeg"
+          alt="Contenedores de exportación"
+        />
+      </div>
+    </div>
+
+    <!-- Misión y Visión -->
+    <div class="card-image-row reverse reveal reveal-delay-1" style="margin-top:28px">
+      <div class="card-image-slot">
+        <img
+          src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?w=700&q=80"
+          alt="Equipo ECOPET"
+        />
+      </div>
+      <div class="card-content">
+        <h3>Misión y Visión</h3>
+        <div class="mission-grid">
+          <div class="mission-item">
+            <h4>Misión</h4>
+            <p>
+Construimos relaciones sólidas y de largo plazo con proveedores confiables y entregamos valor constante a nuestros clientes mediante exportaciones 
+seguras.
+            </p>
+          </div>
+          <div class="mission-item">
+            <h4>Visión</h4>
+            <p>
+              Ser reconocidos como una empresa líder en refinación metalúrgica, destacando por nuestra confiabilidad, eficiencia y capacidad con el objetivo de ser el proveedor #1 del sector.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+
+<!-- ============================================================
+     Productos - CON MODAL FLOTANTE
+============================================================ -->
+<section class="section services-bg" id="productos">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">Lo que hacemos</div>
+      <h2>Nuestros Productos</h2>
+      <p style="color:rgba(255,255,255,.75)">Soluciones integrales de reciclaje y metalurgia para la industria global</p>
+    </div>
+
+    <div class="services-grid">
+
+      <!-- Tarjeta 1 -->
+      <div class="service-card reveal" onclick="openProductModal('Scrap de Plomo', 'Desperdicios y residuos de plomo (incluye mangas y subproductos). Materia prima principal para producir tochos de plomo de alta pureza.', 'scrap.jpeg')">
+        <h3>Scrap de Plomo</h3>
+        <p>Desperdicios y residuos de plomo</p>
+      </div>
+
+      <!-- Tarjeta 2 -->
+      <div class="service-card reveal reveal-delay-1" onclick="openProductModal('Viruta de Hierro', 'Viruta de hierro de alta calidad usada como fundente auxiliar. Optimiza la eficiencia térmica y la recuperación del plomo.', 'viruta.jpg')">
+        <h3>Viruta de Hierro</h3>
+        <p>Material fundente auxiliar</p>
+      </div>
+
+      <!-- Tarjeta 3 -->
+      <div class="service-card reveal reveal-delay-2" onclick="openProductModal('Antracita', 'Antracita de alta pureza como combustible y fundente. Garantiza temperatura controlada y mejor rendimiento metalúrgico.', 'antracita.png')">
+        <h3>Antracita</h3>
+        <p>Combustible y fundente</p>
+      </div>
+
+      <!-- Tarjeta 4 -->
+      <div class="service-card reveal" onclick="openProductModal('Tochos de Plomo', 'Tochos de plomo de alta pureza obtenidos por fundición térmica. Codificados, con trazabilidad por lote y listos para exportación.', 'tochos.jpeg')">
+        <h3>Tochos de Plomo</h3>
+        <p>Producto terminado listo para exportar</p>
+      </div>
+
+      <!-- Tarjeta 5 -->
+      <div class="service-card reveal reveal-delay-1" onclick="openProductModal('Ligotes de Plomo', 'Ligotes de plomo de alta pureza. Moldeados y solidificados con codificación y trazabilidad por lote.', 'lingote.jpeg')">
+        <h3>Ligotes de Plomo</h3>
+        <p>Producto terminado listo para exportar</p>
+      </div>
+
+      <!-- Tarjeta 6  -->
+<div class="service-card reveal reveal-delay-2" onclick="openProductModal('Consultoría de Residuos Metalúrgicos', 'Asesoramos en el manejo responsable de residuos metálicos (scrap de plomo, viruta y antracita), procesos de fundición térmica controlada y estrategias de economía circular para la recuperación y exportación de plomo refinado.', 'negociacion.jpg')">
+  <h3>Consultoría de Residuos Metalúrgicos</h3>
+  <p>Gestión sostenible de residuos metálicos</p>
+</div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+<!-- ============================================================
+     PRODUCCION (resumen)
+============================================================ -->
+<section class="section" id="produccion">
+  <div class="container">
+    <div class="section-head reveal">
+      <div class="eyebrow">¿Qué hacemos con el material?</div>
+      <h2>Producción</h2>
+      <p>Procesamos y refinamos materias primas metalúrgicas bajo los más estrictos estándares técnicos</p>
+    </div>
+
+    <div class="prod-cards">
+      <div class="card-image-row reveal" style="flex-direction:column;min-height:auto;">
+        <div class="card-content" style="padding:28px 28px;">
+          <h3>¿Qué hacemos con el material?</h3>
+          <p>
+            En ECOPET EXPORTACIONES recibimos materia prima seleccionada y la procesamos mediante técnicas metalúrgicas controladas
+             para refinarla y convertirla en materiales metalúrgicos de alta pureza.
+          </p>
+          <p>
+            Con este proceso extraemos y purificamos el metal, eliminando impurezas para
+            obtener un producto final con composición química estable, excelente rendimiento
+            y propiedades mecánicas consistentes.
+          </p>
+
+          <p>El resultado son materiales refinados listos para su uso en la industria, entregados en lotes confiables y de calidad uniforme.</p>
+        </div>
+        <div class="card-image-slot" style="min-height:540px">
+          <img
+            src="horno.jpeg"
+            alt="Horno metalúrgico ECOPET"
+          />
+        </div>
+      </div>
+
+      <!-- Tarjeta 2: Actividad Principal con CARRUSEL MEJORADO -->
+      <div class="card-image-row reveal reveal-delay-1" style="flex-direction:column;min-height:auto;">
+
+        <!-- CARRUSEL ECOPET -->
+        <div style="min-height:420px; border-radius:18px 18px 0 0; overflow:hidden;">
+          <div class="ecopet-carousel" id="carousel-actividad">
+
+            <div class="c-slide active">
+              <img src="ind1.jpeg" alt="Horno de fundición - Vista 1">
+            </div>
+            <div class="c-slide">
+              <img src="pro2.jpeg" alt="Proceso de producción">
+            </div>
+            <div class="c-slide">
+              <img src="tocho2.jpeg" alt="Control de rendimiento">
+            </div>
+
+            <!-- Flechas -->
+            <button class="c-arrow prev" aria-label="Anterior">&#8249;</button>
+            <button class="c-arrow next" aria-label="Siguiente">&#8250;</button>
+
+            <!-- Dots -->
+            <div class="c-dots">
+              <button class="c-dot active" data-index="0"></button>
+              <button class="c-dot" data-index="1"></button>
+              <button class="c-dot" data-index="2"></button>
+            </div>
+
+            <!-- Contador -->
+            <div class="c-counter" id="counter-actividad">1 / 3</div>
+          </div>
+        </div>
+
+        <!-- Texto -->
+        <div class="card-content" style="padding:36px 36px;">
+          <h3>Actividad Principal</h3>
+          <p>
+            En ECOPET EXPORTACIONES nos dedicamos principalmente al procesamiento y refinación de materias primas metalúrgicas.
+            Recibimos material en bruto, lo procesamos bajo estrictos controles técnicos y lo transformamos en productos metalúrgicos refinados de alta pureza.
+          </p>
+          <a href="produccion.html" class="btn btn-primary" style="margin-top:16px;width:fit-content;">
+            Ver proceso completo →
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     CONTACTO
+============================================================ -->
+<section class="section contact-section" id="contacto">
+  <div class="container">
+    <div class="section-head reveal">
+      <h2>Contáctanos</h2>
+      <p>En ECOPET EXPORTACIONES estamos abiertos a establecer relaciones comerciales sólidas y de largo plazo.</p>
+    </div>
+
+    <!-- GRID DE 3 COLUMNAS -->
+    <div class="contact-grid-3">
+
+<!-- Columna 1: Formulario -->
+<div class="contact-form-wrap">
+  <h3>Envíanos un mensaje</h3>
+  
+  <form id="contactForm" action="https://formspree.io/f/mnjlqgjd" method="POST">
+    
+    <div class="form-row">
+      <div class="form-group">
+        <label>Nombre</label>
+        <input type="text" name="nombre" placeholder="Tu nombre completo" required />
+      </div>
+      <div class="form-group">
+        <label>Email</label>
+        <input type="email" name="email" placeholder="tu@email.com" required />
+      </div>
+    </div>
+
+    <div class="form-group">
+      <label>Asunto</label>
+      <input type="text" name="asunto" placeholder="¿En qué podemos ayudarte?" required />
+    </div>
+
+    <div class="form-group">
+      <label>Mensaje</label>
+      <textarea name="mensaje" placeholder="Describe tu consulta o propuesta..." rows="6" required></textarea>
+    </div>
+
+    <button type="submit" class="btn-submit" id="submitBtn">Enviar Mensaje</button>
+  </form>
+
+  <!-- Mensaje de éxito -->
+  <div id="successMessage" style="display:none; margin-top:20px; padding:15px 20px; background:#e0f7ec; color:#1a8c5a; border-radius:12px; text-align:center; font-weight:600;">
+    ✅ ¡Mensaje enviado correctamente! Gracias por contactarnos.
+  </div>
+
+
+</div>
+
+      <!-- Columna 2: Información de contacto -->
+      <div class="contact-info-wrap reveal reveal-delay-1">
+        <h3>Información de contacto</h3>
+        <div class="info-items">
+          <div class="info-item">
+            <div class="info-item-text">
+              <label>Dirección</label>
+              <span>Av. Industrias Unidas, Parque Industrial de Ancón, Lima</span>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-item-text">
+              <label>Teléfono (WhatsApp)</label>
+              <a href="https://wa.me/51908852235">+51 908 852 235</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-item-text">
+              <label>Email</label>
+              <a href="mailto:ecopet.exportaciones.eirl@gmail.com">ecopet.exportaciones.eirl@gmail.com</a>
+            </div>
+          </div>
+          <div class="info-item">
+            <div class="info-item-text">
+              <label>Horarios de atención</label>
+              <span>Lun – Vie: 8:00 AM – 7:00 PM<br>Sáb: 8:00 AM – 4:00 PM</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Columna 3: Mapa -->
+            <!-- Columna 3: Mapa -->
+      <div class="contact-map-wrap reveal reveal-delay-2">
+        <h3>Nuestra ubicación</h3>
+<!-- MAPA CON PIN ROJO FIJO Y VISIBLE -->
+<div class="map-wrap-large">
+  <iframe 
+    src="https://www.google.com/maps?q=-11.7537018302131,-77.15309087923629&hl=es&z=18&output=embed" 
+    width="100%" 
+    height="100%" 
+    style="border:0;" 
+    allowfullscreen="" 
+    loading="lazy" 
+    referrerpolicy="no-referrer-when-downgrade">
+  </iframe>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     FOOTER
+============================================================ -->
+<footer>
+  <div class="footer-grid">
+    
+    <!-- Columna 1: Logo y descripción -->
+    <div class="footer-brand">
+      <div class="nav-brand" style="margin-bottom:14px">
+        <img src="logo.png" alt="ECOPET" />
+      </div>
+      <p>Procesamiento y Refinación Metalúrgica</p>
+    </div>
+
+    <!-- Columna 2: Empresa -->
+     <p>
+    <div class="footer-col">
+      <h4>Empresa</h4>
+      <ul>
+        <li><a href="#nosotros">Sobre Nosotros</a></li>
+        <li><a href="produccion.html">Producción</a></li>
+        <li><a href="#productos">Productos</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </div>
+     </p>
+
+  </div>
+
+  <!-- Footer Bottom - Ahora dentro y centrado -->
+  <div class="footer-bottom">
+    <span>© 2023 ECOPET Exportaciones E.I.R.L. Todos los derechos reservados.</span>
+    <span>Lima, Perú 🇵🇪</span>
+  </div>
+</footer>
+
+<!-- ============================================================
+     CHATBOT / ROBOT ANIMADO
+============================================================ -->
+<div class="chatbot-wrap" id="chatbotWrap">
+
+  <!-- Chat window -->
+  <div class="chat-window" id="chatWindow">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar-mini">🤖</div>
+        <div>
+          <h4>CHAT CON ECOBOT</h4>
+          <p><span class="status-dot"></span>En línea ahora</p>
+        </div>
+      </div>
+      <button class="chat-close" id="chatClose" title="Cerrar">✕</button>
+    </div>
+
+    <div class="chat-body" id="chatBody">
+      <div class="chat-msg">
+        <div class="bot-avatar-sm">🤖</div>
+        <div class="msg-bubble">¡Hola! Soy EcoBot, tu asistente en Reciclaje. 👋</div>
+      </div>
+      <div class="chat-msg" style="animation-delay:.2s">
+        <div class="bot-avatar-sm">🤖</div>
+        <div class="msg-bubble">Estoy aquí para ayudarte a contactarnos rápidamente.</div>
+      </div>
+      <div class="chat-msg" style="animation-delay:.4s">
+        <div class="bot-avatar-sm">🤖</div>
+        <div class="msg-bubble">Responde <strong>Sí</strong> si deseas que nos pongamos en contacto contigo.</div>
+      </div>
+    </div>
+
+    <div class="quick-replies">
+      <button class="quick-reply-btn" onclick="quickReply(this,'Sí, contáctenme')">✅ Sí, contáctenme</button>
+      <button class="quick-reply-btn" onclick="quickReply(this,'WhatsApp')">📱 WhatsApp</button>
+    </div>
+
+    <div class="chat-input-row">
+      <input class="chat-input" id="chatInput" placeholder="Escribe tu mensaje..." onkeydown="handleKey(event)" />
+      <button class="chat-send" onclick="sendMsg()">➤</button>
+    </div>
+  </div>
+
+  <!-- Robot button -->
+  <div class="robot-btn" id="robotBtn" onclick="toggleChat()" title="Chatear con EcoBot">
+    <div class="chat-notif" id="chatNotif">1</div>
+    <div class="speech-bubble" id="speechBubble">¡Hola! ¿Necesitas ayuda? 👋</div>
+
+    <!-- Animated SVG Robot -->
+    <svg class="robot-svg" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
+      <!-- Base / body -->
+      <ellipse cx="50" cy="92" rx="24" ry="5" fill="rgba(0,0,0,0.15)"/>
+
+      <!-- Legs -->
+      <rect x="36" y="76" width="10" height="14" rx="4" fill="#1a8c5a"/>
+      <rect x="54" y="76" width="10" height="14" rx="4" fill="#1a8c5a"/>
+      <!-- Feet -->
+      <ellipse cx="41" cy="91" rx="7" ry="3.5" fill="#0f5e3a"/>
+      <ellipse cx="59" cy="91" rx="7" ry="3.5" fill="#0f5e3a"/>
+
+      <!-- Body -->
+      <rect x="28" y="46" width="44" height="32" rx="10" fill="#2bbd7e"/>
+      <!-- Body highlight -->
+      <rect x="32" y="50" width="36" height="8" rx="4" fill="rgba(255,255,255,0.2)"/>
+      <!-- Chest panel -->
+      <rect x="36" y="62" width="28" height="12" rx="5" fill="#1a8c5a"/>
+      <circle cx="44" cy="68" r="3" fill="#a8ffcc">
+        <animate attributeName="opacity" values="1;0.3;1" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+      <circle cx="56" cy="68" r="3" fill="#a8ffcc">
+        <animate attributeName="opacity" values="0.3;1;0.3" dur="1.2s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Arms -->
+      <rect x="10" y="48" width="18" height="9" rx="4.5" fill="#2bbd7e"/>
+      <circle cx="10" cy="52.5" r="5" fill="#1a8c5a"/>
+      <rect x="72" y="48" width="18" height="9" rx="4.5" fill="#2bbd7e"/>
+      <circle cx="90" cy="52.5" r="5" fill="#1a8c5a"/>
+
+      <!-- Neck -->
+      <rect x="44" y="36" width="12" height="11" rx="4" fill="#1a8c5a"/>
+
+      <!-- Head -->
+      <rect x="22" y="10" width="56" height="42" rx="16" fill="#2bbd7e"/>
+      <!-- Head highlight -->
+      <ellipse cx="50" cy="16" rx="20" ry="5" fill="rgba(255,255,255,0.18)"/>
+      <!-- Antenna -->
+      <line x1="50" y1="10" x2="50" y2="2" stroke="#1a8c5a" stroke-width="3" stroke-linecap="round"/>
+      <circle cx="50" cy="1" r="3.5" fill="#a8ffcc">
+        <animate attributeName="r" values="3.5;5;3.5" dur="1.5s" repeatCount="indefinite"/>
+        <animate attributeName="opacity" values="1;0.6;1" dur="1.5s" repeatCount="indefinite"/>
+      </circle>
+
+      <!-- Eyes -->
+      <g class="robot-eye">
+        <ellipse cx="38" cy="30" rx="9" ry="10" fill="white"/>
+        <ellipse cx="38" cy="31" rx="6" ry="7" fill="#0f5e3a"/>
+        <circle cx="40" cy="29" r="2.5" fill="white"/>
+        <!-- Blinking eyelid -->
+        <rect x="29" y="20" width="18" height="0" rx="2" fill="#2bbd7e">
+          <animate attributeName="height" values="0;20;0" dur="3.5s" repeatCount="indefinite" keyTimes="0;0.95;1"/>
+        </rect>
+      </g>
+      <g class="robot-eye">
+        <ellipse cx="62" cy="30" rx="9" ry="10" fill="white"/>
+        <ellipse cx="62" cy="31" rx="6" ry="7" fill="#0f5e3a"/>
+        <circle cx="64" cy="29" r="2.5" fill="white"/>
+        <!-- Blinking eyelid -->
+        <rect x="53" y="20" width="18" height="0" rx="2" fill="#2bbd7e">
+          <animate attributeName="height" values="0;20;0" dur="3.5s" begin="0.1s" repeatCount="indefinite" keyTimes="0;0.95;1"/>
+        </rect>
+      </g>
+
+      <!-- Mouth -->
+      <path d="M38 43 Q50 50 62 43" stroke="white" stroke-width="2.5" fill="none" stroke-linecap="round">
+        <animate attributeName="d" values="M38 43 Q50 50 62 43;M38 43 Q50 47 62 43;M38 43 Q50 50 62 43" dur="3s" repeatCount="indefinite"/>
+      </path>
+    </svg>
+  </div>
+</div>
+
+<!-- MODAL FLOTANTE DE PRODUCTOS -->
+<div id="productModal" class="product-modal">
+  <div class="modal-content">
+    <button class="modal-close" onclick="closeProductModal()">✕</button>
+    <img id="modalImage" src="" alt="">
+    <h3 id="modalTitle"></h3>
+    <p id="modalDesc"></p>
+  </div>
+</div>
+
+
+
+<!-- ============================================================
+     JAVASCRIPT
+============================================================ -->
+<script>
+  /* ---- Navbar scroll ---- */
+  const navbar = document.getElementById('navbar');
+  window.addEventListener('scroll', () => {
+    navbar.classList.toggle('scrolled', window.scrollY > 60);
+    // Active link
+    document.querySelectorAll('.nav-links a').forEach(a => {
+      if (a.hash) {
+        const sec = document.querySelector(a.hash);
+        if (sec) {
+          const rect = sec.getBoundingClientRect();
+          if (rect.top <= 80 && rect.bottom >= 80) a.classList.add('active');
+          else a.classList.remove('active');
+        }
+      }
+    });
+  });
+
+  /* ---- Reveal on scroll ---- */
+  const revealEls = document.querySelectorAll('.reveal');
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); io.unobserve(e.target); } });
+  }, { threshold: 0.12 });
+  revealEls.forEach(el => io.observe(el));
+
+  /* ---- Chatbot ---- */
+  const chatWindow = document.getElementById('chatWindow');
+  const chatClose  = document.getElementById('chatClose');
+  const chatNotif  = document.getElementById('chatNotif');
+  const speechBubble = document.getElementById('speechBubble');
+  const chatBody   = document.getElementById('chatBody');
+  const chatInput  = document.getElementById('chatInput');
+
+  let chatOpen = false;
+
+  function toggleChat() {
+    chatOpen = !chatOpen;
+    chatWindow.classList.toggle('open', chatOpen);
+    chatNotif.style.display = chatOpen ? 'none' : 'flex';
+    speechBubble.classList.toggle('hidden', chatOpen);
+    if (chatOpen) chatInput.focus();
+  }
+
+  chatClose.addEventListener('click', (e) => {
+    e.stopPropagation();
+    chatOpen = false;
+    chatWindow.classList.remove('open');
+    chatNotif.style.display = 'flex';
+    speechBubble.classList.remove('hidden');
+  });
+
+  // Auto-hide speech bubble
+  setTimeout(() => speechBubble.classList.add('hidden'), 6000);
+
+  function addBotMsg(text, delay = 0) {
+    setTimeout(() => {
+      const msg = document.createElement('div');
+      msg.className = 'chat-msg';
+      msg.innerHTML = `<div class="bot-avatar-sm">🤖</div><div class="msg-bubble">${text}</div>`;
+      chatBody.appendChild(msg);
+      chatBody.scrollTop = chatBody.scrollHeight;
+    }, delay);
+  }
+
+  function addUserMsg(text) {
+    const msg = document.createElement('div');
+    msg.className = 'chat-msg';
+    msg.style.flexDirection = 'row-reverse';
+    msg.innerHTML = `<div class="msg-bubble" style="background:#e0f7ec;border-color:#a8ffcc;border-radius:14px 14px 4px 14px;">${text}</div>`;
+    chatBody.appendChild(msg);
+    chatBody.scrollTop = chatBody.scrollHeight;
+  }
+
+  function quickReply(btn, text) {
+    addUserMsg(text);
+    btn.disabled = true;
+    if (text.includes('Sí') || text.includes('contact')) {
+      addBotMsg('¡Perfecto! 🎉 Nos pondremos en contacto contigo muy pronto.', 800);
+      addBotMsg('Puedes también escribirnos a <a href="mailto:ecopet.exportaciones.eirl@gmail.com" style="color:#1a8c5a">ecopet.exportaciones.eirl@gmail.com</a>', 1600);
+    } else if (text.includes('servicio')) {
+      addBotMsg('¡Con gusto! 🔍 Ofrecemos: <br>• Reciclaje Industrial<br>• Procesamiento Metalúrgico<br>• Exportación Internacional', 800);
+    } else if (text.includes('WhatsApp')) {
+      addBotMsg('📱 Puedes contactarnos por WhatsApp: <a href="https://wa.me/51908852235" style="color:#1a8c5a;font-weight:700">+51 908 852 235</a>', 800);
+    }
+  }
+
+  function sendMsg() {
+    const txt = chatInput.value.trim();
+    if (!txt) return;
+    addUserMsg(txt);
+    chatInput.value = '';
+    const lower = txt.toLowerCase();
+    let resp = '¡Gracias por tu mensaje! 😊 Nos comunicaremos contigo a la brevedad posible.';
+    if (lower.includes('hola') || lower.includes('buenos')) resp = '¡Hola! 👋 ¿En qué podemos ayudarte hoy?';
+    else if (lower.includes('precio') || lower.includes('costo')) resp = 'Para cotizaciones personalizadas, escríbenos a ecopet.exportaciones.eirl@gmail.com o llámanos al +51 908 852 235.';
+    else if (lower.includes('servicio')) resp = 'Ofrecemos reciclaje industrial, procesamiento metalúrgico y exportación internacional. ¿Quieres más detalles?';
+    addBotMsg(resp, 900);
+  }
+
+  function handleKey(e) { if (e.key === 'Enter') sendMsg(); }
+</script>
+
+
+<!-- ============================================================
+     CARRUSEL ENGINE - SISTEMA UNIFICADO ECOPET
+============================================================ -->
+<script>
+function initEcopetCarousel(carouselId) {
+  const carousel = document.getElementById(carouselId);
+  if (!carousel) return;
+
+  const slides = Array.from(carousel.querySelectorAll('.c-slide'));
+  const dots   = Array.from(carousel.querySelectorAll('.c-dot'));
+  const counter = carousel.querySelector('.c-counter');
+  const total  = slides.length;
+  let current  = 0;
+  let animating = false;
+
+  function goTo(next, direction) {
+    if (animating || next === current) return;
+    animating = true;
+
+    const prevSlide = slides[current];
+    const nextSlide = slides[next];
+
+    // Salida del slide actual
+    prevSlide.classList.add('exit-left');
+    prevSlide.classList.remove('active');
+
+    // Posición inicial del siguiente (viene desde la derecha o izquierda)
+    nextSlide.style.transform = direction === 'next' ? 'translateX(60px)' : 'translateX(-60px)';
+    nextSlide.style.opacity = '0';
+    nextSlide.classList.remove('active');
+
+    // Forzar reflow
+    void nextSlide.offsetWidth;
+
+    // Activar animación de entrada
+    nextSlide.style.transform = '';
+    nextSlide.style.opacity = '';
+    nextSlide.classList.add('active');
+
+    // Actualizar dots
+    dots.forEach((d, i) => d.classList.toggle('active', i === next));
+
+    // Actualizar contador
+    if (counter) counter.textContent = (next + 1) + ' / ' + total;
+
+    current = next;
+
+    setTimeout(() => {
+      prevSlide.classList.remove('exit-left');
+      animating = false;
+    }, 580);
+  }
+
+  // Flechas
+  const prevBtn = carousel.querySelector('.c-arrow.prev');
+  const nextBtn = carousel.querySelector('.c-arrow.next');
+
+  if (prevBtn) prevBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const prev = (current - 1 + total) % total;
+    goTo(prev, 'prev');
+  });
+
+  if (nextBtn) nextBtn.addEventListener('click', (e) => {
+    e.stopPropagation();
+    const next = (current + 1) % total;
+    goTo(next, 'next');
+  });
+
+  // Dots
+  dots.forEach((dot, i) => {
+    dot.addEventListener('click', () => {
+      const dir = i > current ? 'next' : 'prev';
+      goTo(i, dir);
+    });
+  });
+
+  // Autoplay opcional (cada 5s)
+  let autoplay = setInterval(() => {
+    const next = (current + 1) % total;
+    goTo(next, 'next');
+  }, 5000);
+
+  // Pausar autoplay al interactuar
+  carousel.addEventListener('mouseenter', () => clearInterval(autoplay));
+  carousel.addEventListener('mouseleave', () => {
+    autoplay = setInterval(() => {
+      const next = (current + 1) % total;
+      goTo(next, 'next');
+    }, 5000);
+  });
+
+  // Touch swipe
+  let touchStartX = 0;
+  carousel.addEventListener('touchstart', (e) => { touchStartX = e.touches[0].clientX; }, { passive: true });
+  carousel.addEventListener('touchend', (e) => {
+    const diff = touchStartX - e.changedTouches[0].clientX;
+    if (Math.abs(diff) > 40) {
+      if (diff > 0) goTo((current + 1) % total, 'next');
+      else goTo((current - 1 + total) % total, 'prev');
+    }
+  });
+}
+
+document.addEventListener('DOMContentLoaded', () => {
+  initEcopetCarousel('carousel-actividad');
+});
+</script>
+
+<script>
+// ABRIR MODAL DE PRODUCTO
+function openProductModal(title, desc, image) {
+  document.getElementById('modalTitle').textContent = title;
+  document.getElementById('modalDesc').textContent = desc;
+  document.getElementById('modalImage').src = image;
+  document.getElementById('productModal').classList.add('show');
+}
+
+// CERRAR MODAL
+function closeProductModal() {
+  const modal = document.getElementById('productModal');
+  modal.classList.remove('show');
+}
+
+// Cerrar al hacer clic fuera del contenido
+document.getElementById('productModal').addEventListener('click', function(e) {
+  if (e.target.id === 'productModal') closeProductModal();
+});
+</script>
+
+
+<script>
+// LIMPIAR FORMULARIO DESPUÉS DE ENVIAR
+document.getElementById('contactForm').addEventListener('submit', function(e) {
+  const form = this;
+  const submitBtn = document.getElementById('submitBtn');
+  const successMsg = document.getElementById('successMessage');
+
+  // Cambiar texto del botón mientras envía
+  submitBtn.textContent = 'Enviando...';
+  submitBtn.disabled = true;
+
+  // Después de enviar (Formspree redirige, pero también podemos limpiar)
+  setTimeout(() => {
+    if (successMsg) {
+      successMsg.style.display = 'block';
+      form.reset();                    // ← Limpia todos los campos
+    }
+  }, 800);
+
+  // Opcional: volver a ocultar el mensaje después de 5 segundos
+
+  setTimeout(() => {
+    successMsg.style.display = 'none';
+    submitBtn.textContent = 'Enviar Mensaje';
+    submitBtn.disabled = false;
+  }, 5000);
+});
+
+// ===== FRASE ANIMADA EN NAVBAR =====
+document.addEventListener('DOMContentLoaded', () => {
+  const frase = document.getElementById('navFrase');
+  
+  function mostrarFrase() {
+    frase.classList.add('mostrar');
+    
+    // Se oculta después de 8 segundos para que dé tiempo a leer
+    setTimeout(() => {
+      frase.classList.remove('mostrar');
+    }, 8000);
+  }
+
+  // Primera aparición
+  setTimeout(mostrarFrase, 1400);
+
+  // Repetir cada 26 segundos
+  setInterval(mostrarFrase, 26000);
+});
+
+</script>
+
+
+
+</body>
+</html>
